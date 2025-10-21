@@ -1,0 +1,9 @@
+{
+	"name": "df-hritesh",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "315a7da1-c37d-4e28-ad28-48e558941e77",
+		"tenantId": "d1c2c64e-d1fb-4398-9c17-3b882b150c03"
+	}
+}
