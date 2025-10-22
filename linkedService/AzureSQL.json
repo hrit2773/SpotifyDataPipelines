@@ -1,0 +1,17 @@
+{
+	"name": "AzureSQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "dbserverhrit.database.windows.net",
+			"database": "hriteshsqldb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "hriteshadmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDA5QTRENUVDLTJEMkQtNEY1QS05QzgyLTlCMTUyRTU2NDg0OF9hYTg2MTY5My03MDIwLTQwODgtOGYyOC1iNWVhNGE2OTMzZjAiDQp9"
+		}
+	}
+}
