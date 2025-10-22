@@ -1,5 +1,5 @@
 {
-	"name": "cdc_timestamp",
+	"name": "json_dynamic",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "DataLake",
