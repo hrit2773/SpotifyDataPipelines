@@ -3,11 +3,15 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
+				"name": "ForEachTable",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.loop_input",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "SQLToDataLake",
@@ -143,7 +147,7 @@
 							}
 						},
 						{
-							"name": "IncrementalData_copy1",
+							"name": "IncrementalData",
 							"type": "IfCondition",
 							"dependsOn": [
 								{
@@ -219,7 +223,7 @@
 												{
 													"type": "Query",
 													"text": {
-														"value": "select Max(@{pipeline().parameters.cdc_col}) as cdc from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+														"value": "select Max(@{item().cdc_col}) as cdc from @{item().schema}.@{item().table}",
 														"type": "Expression"
 													}
 												}
