@@ -183,7 +183,7 @@
 														"type": "Expression"
 													},
 													"p_file": {
-														"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
+														"value": "@concat(item().table,'_',variables('current'))",
 														"type": "Expression"
 													}
 												}
